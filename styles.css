@@ -1,0 +1,122 @@
+/* ===== Variables: cambia --color-principal para tu commit de práctica ===== */
+:root {
+  --color-principal: #2563eb;
+  --color-fondo: #f4f6fb;
+  --color-texto: #1f2937;
+  --color-tarjeta: #ffffff;
+  --radio: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* ===== Encabezado ===== */
+.encabezado {
+  background: var(--color-principal);
+  color: #fff;
+  text-align: center;
+  padding: 48px 16px 24px;
+}
+
+.encabezado h1 {
+  font-size: 2.2rem;
+}
+
+.subtitulo {
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Contenido ===== */
+main {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 20px;
+}
+
+.tarjeta {
+  background: var(--color-tarjeta);
+  border-radius: var(--radio);
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tarjeta h2 {
+  color: var(--color-principal);
+  margin-bottom: 8px;
+}
+
+.lista-habilidades {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lista-habilidades li {
+  background: var(--color-fondo);
+  border: 1px solid var(--color-principal);
+  color: var(--color-principal);
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.boton {
+  margin-top: 12px;
+  background: var(--color-principal);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton:hover {
+  filter: brightness(1.1);
+}
+
+.mensaje {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* ===== Pie ===== */
+.pie {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+}

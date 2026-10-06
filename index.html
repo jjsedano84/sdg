@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 1. Cambia TU NOMBRE en el título -->
+  <title>Mi primer sitio | TU NOMBRE</title>
+  <!-- Rutas RELATIVAS: así funcionan igual en tu PC y en GitHub Pages -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <!-- 2. Cambia TU NOMBRE aquí también -->
+    <h1>Hola, soy TU NOMBRE</h1>
+    <p class="subtitulo">Estudiante de desarrollo de software</p>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi" class="tarjeta">
+      <h2>Sobre mí</h2>
+      <p>
+        Este es mi primer sitio publicado en internet con Git, GitHub y GitHub Pages.
+        Cada cambio que hago queda guardado en el historial de mi repositorio.
+      </p>
+    </section>
+
+    <section id="habilidades" class="tarjeta">
+      <h2>Habilidades</h2>
+      <!-- 3. Práctica: agrega aquí una habilidad nueva y haz un commit -->
+      <ul class="lista-habilidades">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git y GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="tarjeta">
+      <h2>Contacto</h2>
+      <p>¿Quieres saludarme? Presiona el botón.</p>
+      <button id="btn-saludo" class="boton">Saludar</button>
+      <p id="mensaje" class="mensaje"></p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Publicado con GitHub Pages · <span id="anio"></span></p>
+  </footer>
+</body>
+</html>
